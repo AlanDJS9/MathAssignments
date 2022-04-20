@@ -1,10 +1,9 @@
-#pragma once
 #ifndef RAY_H
 #define RAY_H
 
-#include <iostream>
+#include "Vector.h"
 #include <math.h>
-#include "Vec3.h"
+using namespace MATH;
 
 using namespace std;
 
@@ -16,7 +15,7 @@ public:
 	Vec3 dir;
 	
 	//Constructor
-	Ray();
+	//Ray();
 	Ray(Vec3 start_, Vec3 dir_);
 
 	//Method to calculate the position

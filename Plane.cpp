@@ -1,5 +1,6 @@
-#include <iostream>
 #include "Plane.h"
+#include <iostream>
+
 using namespace std;
 
 void Plane::set(float x, float y, float z, float d)
@@ -7,7 +8,7 @@ void Plane::set(float x, float y, float z, float d)
 	plane.x = x;
 	plane.y = y;
 	plane.z = z;
-	plane.d = d;
+	plane.w = d;
 }
 Plane::Plane()
 {
@@ -51,14 +52,14 @@ void Plane::print()
 	cout << "A: " << plane.x << endl;
 	cout << "B: " << plane.y << endl;
 	cout << "C: " << plane.z << endl;
-	cout << "D: " << plane.d << endl;
+	cout << "D: " << plane.w << endl;
 
 }
 
 Vec3 Plane::intersectionPoint(Ray ray)
 {
 	Vec3 N(plane.x, plane.y, plane.z);
-	float D = plane.d;
+	float D = plane.w;
 	Vec3 V = ray.dir;
 	Vec3 S = ray.start;
 	float t;

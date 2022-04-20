@@ -14,5 +14,4 @@ Vec3 Ray::currentPosition(float t)
 	p.z = start.z + t * dir.z;
 
 	return p;
-
 }

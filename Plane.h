@@ -1,11 +1,8 @@
-#pragma once
 #ifndef PLANE_H
 #define PLANE_H
 
-#include <iostream>
 #include <math.h>
-#include "Vec4.h"
-#include "Vec3.h"
+#include "Vector.h"
 #include "Ray.h"
 
 using namespace std;
@@ -36,5 +33,4 @@ public:
 	void print();
 
 };
-
 #endif
